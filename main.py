@@ -359,3 +359,16 @@ def scrape():
             for key in company:
                 if SKULocations[item][company][key] == 'URL': print('selenium access URL')
                 if SKULocations[item][company][key] == 'Quantity': print('Have selenium access the data')
+                
+def setupScrape():
+    for item in SKULocations:
+        if item == 'OzAuEagRan':
+            for company in SKULocations[item]:
+                if company == 'StJP':
+                    # SELENIUM WORK HERE
+                    SKULocations[item][company]['URL']
+                    SKULocations[item][company]['Quantity']['1-9']
+                    SKULocations[item][company]['Quantity']['10-19']
+                    SKULocations[item][company]['Quantity']['20-49']
+                    SKULocations[item][company]['Quantity']['50+']
+                        
