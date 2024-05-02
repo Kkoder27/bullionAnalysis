@@ -2,6 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
+import time
 
 #reference dictionary
 SKULocations = {
@@ -349,26 +350,41 @@ SKULocations = {
         }
 }
 
-def test():
+def configTest():
     print(SKULocations['OzAuEagRan']['StJP']['URL'])
     print(SKULocations['OzAuEagRan']['StJP']['Quantity']['1-9'])
 
+def seleniumAction(searchURL, loc1, loc2, loc3, loc4):
+    testParams = [] #ALPHA
+    driver = webdriver.Chrome()
+    driver.get(searchURL)
+    time.sleep(5)
+    locList = [loc1, loc2, loc3, loc4]
+    for value in locList:
+        cost = driver.find_element(By.XPATH, value).text
+        testParams.append(cost)
+    print(testParams) #ALPHA
+    driver.close()
+
 def scrape():
-    for item in SKULocations:
-        for company in item:
-            for key in company:
-                if SKULocations[item][company][key] == 'URL': print('selenium access URL')
-                if SKULocations[item][company][key] == 'Quantity': print('Have selenium access the data')
-                
-def setupScrape():
     for item in SKULocations:
         if item == 'OzAuEagRan':
             for company in SKULocations[item]:
                 if company == 'StJP':
-                    # SELENIUM WORK HERE
-                    SKULocations[item][company]['URL']
-                    SKULocations[item][company]['Quantity']['1-9']
-                    SKULocations[item][company]['Quantity']['10-19']
-                    SKULocations[item][company]['Quantity']['20-49']
-                    SKULocations[item][company]['Quantity']['50+']
-                        
+                    searchURL = SKULocations[item][company]['URL']
+                    searchQuantity1 = SKULocations[item][company]['Quantity']['1-9']
+                    searchQuantity2 = SKULocations[item][company]['Quantity']['10-19']
+                    searchQuantity3 = SKULocations[item][company]['Quantity']['20-49']
+                    searchQuantity4 = SKULocations[item][company]['Quantity']['50+']
+                    seleniumAction(searchURL, searchQuantity1, searchQuantity2, searchQuantity3, searchQuantity4)
+
+def scrapeTest(n):
+    m = 1
+    while n > 0:
+        time.sleep(5)
+        print('test ' + str(m))
+        scrape()
+        print('-' * 10)
+        n -= 1
+        m += 1
+        time.sleep(5)
