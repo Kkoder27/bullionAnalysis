@@ -1,8 +1,9 @@
+#BULLION ANALYSIS
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
-import time
+import time, random
 
 #reference dictionary
 SKULocations = {
@@ -350,11 +351,9 @@ SKULocations = {
         }
 }
 
-def configTest():
-    print(SKULocations['OzAuEagRan']['StJP']['URL'])
-    print(SKULocations['OzAuEagRan']['StJP']['Quantity']['1-9'])
 
 def seleniumAction(searchURL, loc1, loc2, loc3, loc4):
+    global testParams 
     testParams = [] #ALPHA
     driver = webdriver.Chrome()
     driver.get(searchURL)
@@ -363,7 +362,6 @@ def seleniumAction(searchURL, loc1, loc2, loc3, loc4):
     for value in locList:
         cost = driver.find_element(By.XPATH, value).text
         testParams.append(cost)
-    print(testParams) #ALPHA
     driver.close()
 
 def scrape():
@@ -380,11 +378,26 @@ def scrape():
 
 def scrapeTest(n):
     m = 1
+    passing = 0
+    failing = 0
     while n > 0:
-        time.sleep(5)
+        time.sleep(1)
         print('test ' + str(m))
         scrape()
-        print('-' * 10)
         n -= 1
         m += 1
-        time.sleep(5)
+        passTest = 1
+        print(testParams)
+        for test in testParams:
+            if len(test) == 0:
+                passTest = 0
+        if passTest == 1:
+            passing += 1
+            print('test passed')
+        else: 
+            failing += 1
+            print('test failed')
+        print('-' * 10)
+        time.sleep(random.randint(30-300))
+    print('Passing Tests =' + str(passing))
+    print('Failing Tests =' + str(failing))
