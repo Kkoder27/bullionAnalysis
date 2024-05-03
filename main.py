@@ -32,10 +32,10 @@ def scrape():
                     searchQuantity3 = SKULocations[item][company]['Quantity']['20-49']
                     searchQuantity4 = SKULocations[item][company]['Quantity']['50+']
                     seleniumAction(searchURL, searchQuantity1, searchQuantity2, searchQuantity3, searchQuantity4)
-#                    i = 0
-#                    costPackage = [SKUcost[item][company]['Cost']['1-9'], SKUcost[item][company]['Cost']['10-19'], SKUcost[item][company]['Cost']['20-49'], SKUcost[item][company]['Cost']['50+']]
-#                    for value in testParams:
-#                        costPackage[i] = value
+                    SKUcost[item][company]['Cost']['1-9'] = testParams[0]
+                    SKUcost[item][company]['Cost']['10-19'] = testParams[1]
+                    SKUcost[item][company]['Cost']['20-49'] = testParams[2]
+                    SKUcost[item][company]['Cost']['50+'] = testParams[3]
 
 def scrapeTest(n):
     m = 1
