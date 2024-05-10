@@ -3,7 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
-import time
+import time, re
 
 from SKUref import SKULocations
 from SKUcost import SKUcost
@@ -23,9 +23,7 @@ def seleniumAction(searchURL, loc1, loc2, loc3, loc4):
 
 def scrape():
     for item in SKULocations:
-        if item == 'OzAuEagRan':
             for company in SKULocations[item]:
-                if company == 'StJP':
                     searchURL = SKULocations[item][company]['URL']
                     searchQuantity1 = SKULocations[item][company]['Quantity']['1-9']
                     searchQuantity2 = SKULocations[item][company]['Quantity']['10-19']
@@ -37,21 +35,21 @@ def scrape():
                     SKUcost[item][company]['Cost']['20-49'] = testParams[2]
                     SKUcost[item][company]['Cost']['50+'] = testParams[3]
 
-def scrapeTest(n):
-    m = 1
+def scrapeTest(quantityTest):
+    testNums = 1
     passing = 0
     failing = 0
-    while n > 0:
+    while quantityTest > 0:
         time.sleep(1)
-        print('test ' + str(m))
+        print('test ' + str(testNums))
         scrape()
-        n -= 1
-        m += 1
-        passTest = 1
+        quantityTest -= 1
+        testNums += 1
+        passTest = True
         print(testParams)
         for test in testParams:
             if len(test) == 0:
-                passTest = 0
+                passTest = False
         if passTest == 1:
             passing += 1
             print('test passed')

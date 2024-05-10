@@ -39,12 +39,12 @@ SKULocations = {
         },
     'OzAuEagCur' : {
           'StJP' : {
-              'URL' : 'get',
+              'URL' : 'https://www.stjosephpartners.com/item/2024-1-oz-american-gold-eagle/1GE24',
               'Quantity': {
-                  '1-9' : 'pass',
-                  '10-19' : 'pass',
-                  '20-49' : 'pass',
-                  '50+' : 'pass'
+                  '1-9' : '/html/body/div[1]/main/div/div[1]/div[2]/div[2]/div[2]/div/div/table/tbody/tr[2]/td[2]',
+                  '10-19' : '/html/body/div[1]/main/div/div[1]/div[2]/div[2]/div[2]/div/div/table/tbody/tr[3]/td[2]',
+                  '20-49' : '/html/body/div[1]/main/div/div[1]/div[2]/div[2]/div[2]/div/div/table/tbody/tr[4]/td[2]',
+                  '50+' : '/html/body/div[1]/main/div/div[1]/div[2]/div[2]/div[2]/div/div/table/tbody/tr[5]/td[2]'
                   }
           },
           'APMEX' : {
@@ -77,12 +77,12 @@ SKULocations = {
         },
     'OzAuMapleCur' : {
           'StJP' : {
-              'URL' : 'get',
+              'URL' : 'https://www.stjosephpartners.com/item/2024-1-oz-canadian-gold-maple-leaf/1GML24',
               'Quantity': {
-                  '1-9' : 'pass',
-                  '10-19' : 'pass',
-                  '20-49' : 'pass',
-                  '50+' : 'pass'
+                  '1-9' : '/html/body/div[1]/main/div/div[1]/div[2]/div[2]/div[2]/div/div/table/tbody/tr[2]/td[2]',
+                  '10-19' : '/html/body/div[1]/main/div/div[1]/div[2]/div[2]/div[2]/div/div/table/tbody/tr[3]/td[2]',
+                  '20-49' : '/html/body/div[1]/main/div/div[1]/div[2]/div[2]/div[2]/div/div/table/tbody/tr[4]/td[2]',
+                  '50+' : '/html/body/div[1]/main/div/div[1]/div[2]/div[2]/div[2]/div/div/table/tbody/tr[5]/td[2]'
                   }
           },
           'APMEX' : {
@@ -115,12 +115,12 @@ SKULocations = {
         },
     'OzAuPhilCur' : {
           'StJP' : {
-              'URL' : 'get',
+              'URL' : 'https://www.stjosephpartners.com/item/2024-1-oz-austrian-gold-philharmonic/1GPH24',
               'Quantity': {
-                  '1-9' : 'pass',
-                  '10-19' : 'pass',
-                  '20-49' : 'pass',
-                  '50+' : 'pass'
+                  '1-9' : '/html/body/div[1]/main/div/div[1]/div[2]/div[2]/div[2]/div/div/table/tbody/tr[2]/td[2]',
+                  '10-19' : '/html/body/div[1]/main/div/div[1]/div[2]/div[2]/div[2]/div/div/table/tbody/tr[3]/td[2]',
+                  '20-49' : '/html/body/div[1]/main/div/div[1]/div[2]/div[2]/div[2]/div/div/table/tbody/tr[4]/td[2]',
+                  '50+' : '/html/body/div[1]/main/div/div[1]/div[2]/div[2]/div[2]/div/div/table/tbody/tr[5]/td[2]'
                   }
           },
           'APMEX' : {
@@ -152,13 +152,13 @@ SKULocations = {
             }
         },
     'OzAuBarCoice' : {
-          'StJP' : {
-              'URL' : 'get',
+          'StJP' : { #Rand Refinery
+              'URL' : 'https://www.stjosephpartners.com/item/1-oz-gold-bar-asahi/1GBAS',
               'Quantity': {
-                  '1-9' : 'pass',
-                  '10-19' : 'pass',
-                  '20-49' : 'pass',
-                  '50+' : 'pass'
+                  '1-9' : '/html/body/div[1]/main/div/div[1]/div[2]/div[2]/div[2]/div/div/table/tbody/tr[2]/td[2]',
+                  '10-19' : '/html/body/div[1]/main/div/div[1]/div[2]/div[2]/div[2]/div/div/table/tbody/tr[3]/td[2]',
+                  '20-49' : '/html/body/div[1]/main/div/div[1]/div[2]/div[2]/div[2]/div/div/table/tbody/tr[4]/td[2]',
+                  '50+' : '/html/body/div[1]/main/div/div[1]/div[2]/div[2]/div[2]/div/div/table/tbody/tr[5]/td[2]'
                   }
           },
           'APMEX' : {
