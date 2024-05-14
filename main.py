@@ -4,6 +4,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 import time, re
+import pandas as pd
 
 from SKUref import SKULocations
 from SKUcost import SKUcost
@@ -47,36 +48,3 @@ def scrape():
                     SKUcost[item][company]['Cost']['10-19'] = testParams[1]
                     SKUcost[item][company]['Cost']['20-49'] = testParams[2]
                     SKUcost[item][company]['Cost']['50+'] = testParams[3]
-
-def scrapeTest(quantityTest):
-    testNums = 1
-    passing = 0
-    failing = 0
-    while quantityTest > 0:
-        time.sleep(1)
-        print('test ' + str(testNums))
-        scrape()
-        quantityTest -= 1
-        testNums += 1
-        passTest = True
-        print(testParams)
-        for test in testParams:
-            if len(test) == 0:
-                passTest = False
-        if passTest == 1:
-            passing += 1
-            print('test passed')
-        else: 
-            failing += 1
-            print('test failed')
-        print('-' * 10)
-        time.sleep(1)
-    print('Passing Tests =' + str(passing))
-    print('Failing Tests =' + str(failing))
-
-def costTest (testgroup):
-    for item in SKUcost:
-        for company in SKUcost[item]:
-            if company == testgroup:
-                print(item)
-                print(SKUcost[item][company])
