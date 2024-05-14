@@ -2,7 +2,7 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.action_chains import ActionChains
+from selenium.common.exceptions import NoSuchElementException
 import time, re
 
 from SKUref import SKULocations
@@ -13,17 +13,30 @@ def seleniumAction(searchURL, loc1, loc2, loc3, loc4):
     global testParams 
     testParams = [] #ALPHA
     driver = webdriver.Chrome()
-    driver.get(searchURL)
-    time.sleep(5)
+    while True:
+        try: driver.get(searchURL)
+        except Exception as e:
+            print(e)
+            time.sleep(2)
+            continue
+        break
+    time.sleep(2)
     locList = [loc1, loc2, loc3, loc4]
     for value in locList:
-        cost = driver.find_element(By.XPATH, value).text
+        cost = 'Data not Found'
+        try: cost = driver.find_element(By.XPATH, value).text
+        except NoSuchElementException:
+            pass
         testParams.append(cost)
     driver.close()
 
 def scrape():
     for item in SKULocations:
             for company in SKULocations[item]:
+                if company == 'JMBullion':
+                    continue
+                else:
+                #if company == 'StJP':
                     searchURL = SKULocations[item][company]['URL']
                     searchQuantity1 = SKULocations[item][company]['Quantity']['1-9']
                     searchQuantity2 = SKULocations[item][company]['Quantity']['10-19']
@@ -60,3 +73,10 @@ def scrapeTest(quantityTest):
         time.sleep(1)
     print('Passing Tests =' + str(passing))
     print('Failing Tests =' + str(failing))
+
+def costTest (testgroup):
+    for item in SKUcost:
+        for company in SKUcost[item]:
+            if company == testgroup:
+                print(item)
+                print(SKUcost[item][company])
