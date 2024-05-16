@@ -8,6 +8,7 @@ import pandas as pd
 
 from SKUref import SKULocations
 from SKUcost import SKUcost
+from pandasWork import costAssembly
 
 
 def seleniumAction(searchURL, loc1, loc2, loc3, loc4):
