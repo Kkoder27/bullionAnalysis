@@ -8,7 +8,7 @@ import pandas as pd
 
 from SKUref import SKULocations
 from SKUcost import SKUcost
-from pandasWork import costAssembly
+from pandasWork import costAssembly, workbookConfig
 
 
 def seleniumAction(searchURL, loc1, loc2, loc3, loc4):
@@ -19,13 +19,13 @@ def seleniumAction(searchURL, loc1, loc2, loc3, loc4):
         try: driver.get(searchURL)
         except Exception as e:
             print(e)
-            time.sleep(2)
+            time.sleep(1)
             continue
         break
-    time.sleep(2)
+    time.sleep(1)
     locList = [loc1, loc2, loc3, loc4]
     for value in locList:
-        cost = 'Data not Found'
+        cost = 'N/A'
         try: cost = driver.find_element(By.XPATH, value).text
         except NoSuchElementException:
             pass
