@@ -1,0 +1,3 @@
+SKUkey = {
+    #PLACE KEY HERE
+}

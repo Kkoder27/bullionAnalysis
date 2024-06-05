@@ -340,5 +340,233 @@ SKULocations = {
                   '50+' : '//*[@id="SGNBAR-10-3"]/strong'
                   }
             }
+        },
+    'HfOzAuEagCur' : {
+        'StJP': {
+            'URL' : 'https://www.stjosephpartners.com/item/2024-12-oz-american-gold-eagle/.5GE24',
+            'Quantity' : {
+                '1-9' : '/html/body/div[1]/main/div/div[1]/div[2]/div[2]/div[2]/div/div/table/tbody/tr[2]/td[2]',
+                '10-19' : '/html/body/div[1]/main/div/div[1]/div[2]/div[2]/div[2]/div/div/table/tbody/tr[3]/td[2]',
+                '20-49' : '/html/body/div[1]/main/div/div[1]/div[2]/div[2]/div[2]/div/div/table/tbody/tr[4]/td[2]',
+                '50+' : '/html/body/div[1]/main/div/div[1]/div[2]/div[2]/div[2]/div/div/table/tbody/tr[5]/td[2]'
+            }
+        },
+        'APMEX': {
+            'URL' : 'https://www.apmex.com/product/284452/2024-1-2-oz-american-gold-eagle-coin-bu',
+            'Quantity' : {
+                '1-9' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[1]/td[2]',
+                '10-19' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[1]/td[2]',
+                '20-49' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[2]/td[2]',
+                '50+' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[2]/td[2]'
+            }
+        },
+        'JMBullion': {
+            'URL' : 'https://www.jmbullion.com/2024-1-2-oz-american-gold-eagle-coin/',
+            'Quantity' : {
+                '1-9' : '/html/body/div[2]/div[2]/div[3]/div/div[1]/div/div[1]/div[2]/div[3]/div/table[2]/tbody/tr[1]/td[2]',
+                '10-19' : '/html/body/div[2]/div[2]/div[3]/div/div[1]/div/div[1]/div[2]/div[3]/div/table[2]/tbody/tr[1]/td[2]',
+                '20-49' : '/html/body/div[2]/div[2]/div[3]/div/div[1]/div/div[1]/div[2]/div[3]/div/table[2]/tbody/tr[2]/td[2]',
+                '50+' : '/html/body/div[2]/div[2]/div[3]/div/div[1]/div/div[1]/div[2]/div[3]/div/table[2]/tbody/tr[3]/td[2]'
+            }
+        },
+        'SDBullion': {
+            'URL' : 'https://sdbullion.com/2024-1-2-oz-american-gold-eagle-coin',
+            'Quantity' : {
+                '1-9' : '//*[@id="maincontent"]/div[3]/div/div[3]/div[3]/table/tbody/tr[1]/td[2]/div/span/span/strong',
+                '10-19' : '//*[@id="maincontent"]/div[3]/div/div[3]/div[3]/table/tbody/tr[1]/td[2]/div/span/span/strong',
+                '20-49' : '//*[@id="GUS24AGE-05-1"]/strong',
+                '50+' : '//*[@id="GUS24AGE-05-1"]/strong'
+            }
         }
+    },
+    'HfOzAuEagRan' : {
+        'StJP': {
+            'URL' : 'https://www.stjosephpartners.com/item/12-oz-american-gold-eagle/.5EAGLE',
+            'Quantity' : {
+                '1-9' : '/html/body/div[1]/main/div/div[1]/div[2]/div[2]/div[2]/div/div/table/tbody/tr[2]/td[2]',
+                '10-19' : '/html/body/div[1]/main/div/div[1]/div[2]/div[2]/div[2]/div/div/table/tbody/tr[3]/td[2]',
+                '20-49' : '/html/body/div[1]/main/div/div[1]/div[2]/div[2]/div[2]/div/div/table/tbody/tr[4]/td[2]',
+                '50+' : '/html/body/div[1]/main/div/div[1]/div[2]/div[2]/div[2]/div/div/table/tbody/tr[5]/td[2]'
+            }
+        },
+        'APMEX': {
+            'URL' : 'https://www.apmex.com/product/2/1-2-oz-american-gold-eagle-coin-bu-random-year',
+            'Quantity' : {
+                '1-9' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[1]/td[2]',
+                '10-19' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[1]/td[2]',
+                '20-49' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[2]/td[2]',
+                '50+' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[3]/td[2]'
+            }
+        },
+        'JMBullion': {
+            'URL' : 'https://www.jmbullion.com/1-2-oz-american-gold-eagle/',
+            'Quantity' : {
+                '1-9' : '/html/body/div[2]/div[2]/div[3]/div/div[1]/div/div[1]/div[2]/div[3]/div/table[2]/tbody/tr[1]/td[2]',
+                '10-19' : '/html/body/div[2]/div[2]/div[3]/div/div[1]/div/div[1]/div[2]/div[3]/div/table[2]/tbody/tr[1]/td[2]',
+                '20-49' : '/html/body/div[2]/div[2]/div[3]/div/div[1]/div/div[1]/div[2]/div[3]/div/table[2]/tbody/tr[2]/td[2]',
+                '50+' : '/html/body/div[2]/div[2]/div[3]/div/div[1]/div/div[1]/div[2]/div[3]/div/table[2]/tbody/tr[3]/td[2]'
+            }
+        },
+        'SDBullion': {
+            'URL' : 'https://sdbullion.com/1-2-oz-american-gold-eagle-coin-bu-random-year',
+            'Quantity' : {
+                '1-9' : '//*[@id="maincontent"]/div[3]/div/div[3]/div[3]/table/tbody/tr[1]/td[2]/div/span/span/strong',
+                '10-19' : '//*[@id="maincontent"]/div[3]/div/div[3]/div[3]/table/tbody/tr[1]/td[2]/div/span/span/strong',
+                '20-49' : '//*[@id="GUSAGE-05-1"]/strong',
+                '50+' : '//*[@id="GUSAGE-05-2"]/strong'
+            }
+        }
+    },
+    'QtOzAuEagCur' : {
+        'StJP': {
+            'URL' : 'GET',
+            'Quantity' : {
+                '1-9' : 'GET',
+                '10-19' : 'GET',
+                '20-49' : 'GET',
+                '50+' : 'GET'
+            }
+        },
+        'APMEX': {
+            'URL' : 'GET',
+            'Quantity' : {
+                '1-9' : 'GET',
+                '10-19' : 'GET',
+                '20-49' : 'GET',
+                '50+' : 'GET'
+            }
+        },
+        'JMBullion': {
+            'URL' : 'GET',
+            'Quantity' : {
+                '1-9' : 'GET',
+                '10-19' : 'GET',
+                '20-49' : 'GET',
+                '50+' : 'GET'
+            }
+        },
+        'SDBullion': {
+            'URL' : 'GET',
+            'Quantity' : {
+                '1-9' : 'GET',
+                '10-19' : 'GET',
+                '20-49' : 'GET',
+                '50+' : 'GET'
+            }
+        }
+    },
+    'QtOzAuEagRan' : {
+        'StJP': {
+            'URL' : 'GET',
+            'Quantity' : {
+                '1-9' : 'GET',
+                '10-19' : 'GET',
+                '20-49' : 'GET',
+                '50+' : 'GET'
+            }
+        },
+        'APMEX': {
+            'URL' : 'GET',
+            'Quantity' : {
+                '1-9' : 'GET',
+                '10-19' : 'GET',
+                '20-49' : 'GET',
+                '50+' : 'GET'
+            }
+        },
+        'JMBullion': {
+            'URL' : 'GET',
+            'Quantity' : {
+                '1-9' : 'GET',
+                '10-19' : 'GET',
+                '20-49' : 'GET',
+                '50+' : 'GET'
+            }
+        },
+        'SDBullion': {
+            'URL' : 'GET',
+            'Quantity' : {
+                '1-9' : 'GET',
+                '10-19' : 'GET',
+                '20-49' : 'GET',
+                '50+' : 'GET'
+            }
+        }
+    },
+    'TthOzAuEagCur' : {
+        'StJP': {
+            'URL' : 'GET',
+            'Quantity' : {
+                '1-9' : 'GET',
+                '10-19' : 'GET',
+                '20-49' : 'GET',
+                '50+' : 'GET'
+            }
+        },
+        'APMEX': {
+            'URL' : 'GET',
+            'Quantity' : {
+                '1-9' : 'GET',
+                '10-19' : 'GET',
+                '20-49' : 'GET',
+                '50+' : 'GET'
+            }
+        },
+        'JMBullion': {
+            'URL' : 'GET',
+            'Quantity' : {
+                '1-9' : 'GET',
+                '10-19' : 'GET',
+                '20-49' : 'GET',
+                '50+' : 'GET'
+            }
+        },
+        'SDBullion': {
+            'URL' : 'GET',
+            'Quantity' : {
+                '1-9' : 'GET',
+                '10-19' : 'GET',
+                '20-49' : 'GET',
+                '50+' : 'GET'
+            }
+        }
+    },
+    'TthOzAuEagRan' : {
+        'StJP': {
+            'URL' : 'GET',
+            'Quantity' : {
+                '1-9' : 'GET',
+                '10-19' : 'GET',
+                '20-49' : 'GET',
+                '50+' : 'GET'
+            }
+        },
+        'APMEX': {
+            'URL' : 'GET',
+            'Quantity' : {
+                '1-9' : 'GET',
+                '10-19' : 'GET',
+                '20-49' : 'GET',
+                '50+' : 'GET'
+            }
+        },
+        'JMBullion': {
+            'URL' : 'GET',
+            'Quantity' : {
+                '1-9' : 'GET',
+                '10-19' : 'GET',
+                '20-49' : 'GET',
+                '50+' : 'GET'
+            }
+        },
+        'SDBullion': {
+            'URL' : 'GET',
+            'Quantity' : {
+                '1-9' : 'GET',
+                '10-19' : 'GET',
+                '20-49' : 'GET',
+                '50+' : 'GET'
+            }
+        }
+    }
 }
