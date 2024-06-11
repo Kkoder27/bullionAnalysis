@@ -1,9 +1,12 @@
 import pandas as pd
 from SKUcost import SKUcost
+import datetime
 
 def costAssembly():
     itemList = []
-    fileName = 'BullionScrape.xlsx'
+    now = datetime.datetime.now()
+    timeStamp =  now.strftime('%y') + now.strftime('%m') + now.strftime('%d') + now.strftime('%H') + now.strftime('%M') + now.strftime('%S')
+    fileName = 'BullionScrape' + timeStamp + '.xlsx'
     writefile = 'w'
     for key in SKUcost:
         itemList.append(key)

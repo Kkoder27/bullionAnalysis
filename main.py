@@ -19,10 +19,10 @@ def seleniumAction(searchURL, loc1, loc2, loc3, loc4):
         try: driver.get(searchURL)
         except Exception as e:
             print(e)
-            time.sleep(1)
+            time.sleep(3)
             continue
         break
-    time.sleep(1)
+    time.sleep(3)
     locList = [loc1, loc2, loc3, loc4]
     for value in locList:
         cost = 'N/A'
