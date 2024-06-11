@@ -29,8 +29,8 @@ SKULocations = {
           },
           'SDBullion' : {
               'URL' : 'https://sdbullion.com/1-oz-american-gold-eagle-coin-random-year-bu',
-              'Quantity': {
-                  '1-9' : '//*[@id="maincontent"]/div[3]/div/div[3]/div[3]/table/tbody/tr[1]/td[2]/div/span/span',
+              'Quantity': { 
+                  '1-9' : '//*[@id="maincontent"]/div[4]/div/div[1]/section[1]/div/div/div[3]/div[3]/div/table/tbody/tr[1]/td[2]/div/span/span/strong',
                   '10-19' : '//*[@id="GUSAGE-1-1"]',
                   '20-49' : '//*[@id="GUSAGE-1-2"]',
                   '50+' : '//*[@id="GUSAGE-1-2"]'
@@ -67,8 +67,8 @@ SKULocations = {
           },
           'SDBullion' : {
               'URL' : 'https://sdbullion.com/2024-1-oz-american-gold-eagle-coin',
-              'Quantity': {
-                  '1-9' : '//*[@id="maincontent"]/div[3]/div/div[3]/div[3]/table/tbody/tr[1]/td[2]/div/span/span/strong',
+              'Quantity': { 
+                  '1-9' : '//*[@id="maincontent"]/div[4]/div/div[1]/section[1]/div/div/div[3]/div[3]/div/table/tbody/tr[1]/td[2]/div/span/span/strong',
                   '10-19' : '//*[@id="GUS24AGE-1-1"]/strong',
                   '20-49' : '//*[@id="GUS24AGE-1-2"]/strong',
                   '50+' : '//*[@id="GUS24AGE-1-2"]/strong'
@@ -106,7 +106,7 @@ SKULocations = {
           'SDBullion' : {
               'URL' : 'https://sdbullion.com/2024-1-oz-canadian-gold-maple-leaf-coin',
               'Quantity': {
-                  '1-9' : '//*[@id="maincontent"]/div[3]/div/div[3]/div[3]/table/tbody/tr[1]/td[2]/div/span/span/strong',
+                  '1-9' : '//*[@id="maincontent"]/div[4]/div/div[1]/section[1]/div/div/div[3]/div[3]/div/table/tbody/tr[1]/td[2]/div/span/span/strong',
                   '10-19' : '//*[@id="GRC24MAPLE-1-2"]/strong',
                   '20-49' : '//*[@id="GRC24MAPLE-1-3"]/strong',
                   '50+' : '//*[@id="GRC24MAPLE-1-3"]/strong'
@@ -144,7 +144,7 @@ SKULocations = {
           'SDBullion' : {
               'URL' : 'https://sdbullion.com/1-oz-austrian-philharmonic-gold-coin-random-year',
               'Quantity': { #not in stock, using alternative year
-                  '1-9' : '//*[@id="maincontent"]/div[3]/div/div[3]/div[3]/table/tbody/tr[1]/td[2]/div/span/span/strong',
+                  '1-9' : '//*[@id="maincontent"]/div[4]/div/div[1]/section[1]/div/div/div[3]/div[3]/div/table/tbody/tr[1]/td[2]/div/span/span/strong',
                   '10-19' : '//*[@id="GAUPHIL-1-2"]/strong',
                   '20-49' : '//*[@id="GAUPHIL-1-2"]/strong',
                   '50+' : '//*[@id="GAUPHIL-1-2"]/strong'
@@ -182,7 +182,7 @@ SKULocations = {
           'SDBullion' : {
               'URL' : 'https://sdbullion.com/1-oz-gold-bar-in-assay-our-choice-brand',
               'Quantity': {
-                  '1-9' : '//*[@id="maincontent"]/div[3]/div/div[3]/div[3]/table/tbody/tr[1]/td[2]/div/span/span/strong',
+                  '1-9' : '//*[@id="maincontent"]/div[4]/div/div[1]/section[1]/div/div/div[3]/div[3]/div/table/tbody/tr[1]/td[2]/div/span/span/strong',
                   '10-19' : '//*[@id="GGNBAR-1-1"]/strong',
                   '20-49' : '//*[@id="GGNBAR-1-2"]/strong',
                   '50+' : '//*[@id="GGNBAR-1-3"]/strong'
@@ -220,8 +220,8 @@ SKULocations = {
           'SDBullion' : {
               'URL' : 'https://sdbullion.com/2024-american-silver-eagle-coin',
               'Quantity': {
-                  '1-9' : '//*[@id="maincontent"]/div[3]/div/div[3]/div[3]/table/tbody/tr[1]/td[2]/div/span/span/strong',
-                  '10-19' : '//*[@id="maincontent"]/div[3]/div/div[3]/div[3]/table/tbody/tr[1]/td[2]/div/span/span/strong',
+                  '1-9' : '//*[@id="maincontent"]/div[4]/div/div[1]/section[1]/div/div/div[3]/div[3]/div/table/tbody/tr[1]/td[2]/div/span/span/strong',
+                  '10-19' : '//*[@id="maincontent"]/div[4]/div/div[1]/section[1]/div/div/div[3]/div[3]/div/table/tbody/tr[1]/td[2]/div/span/span/strong',
                   '20-49' : '//*[@id="SUS24ASE-1-1"]/strong',
                   '50+' : '//*[@id="SUS24ASE-1-1"]/strong'
                   }
@@ -258,8 +258,8 @@ SKULocations = {
           'SDBullion' : {
               'URL' : 'https://sdbullion.com/2024-silver-maple-leaf-coin',
               'Quantity': {
-                  '1-9' : '//*[@id="maincontent"]/div[3]/div/div[3]/div[3]/table/tbody/tr[1]/td[2]/div/span/span/strong',
-                  '10-19' : '//*[@id="maincontent"]/div[3]/div/div[3]/div[3]/table/tbody/tr[1]/td[2]/div/span/span/strong',
+                  '1-9' : '//*[@id="maincontent"]/div[4]/div/div[1]/section[1]/div/div/div[3]/div[3]/div/table/tbody/tr[1]/td[2]/div/span/span/strong',
+                  '10-19' : '//*[@id="maincontent"]/div[4]/div/div[1]/section[1]/div/div/div[3]/div[3]/div/table/tbody/tr[1]/td[2]/div/span/span/strong',
                   '20-49' : '//*[@id="SRC24MAPLE-1-1"]/strong',
                   '50+' : '//*[@id="SRC24MAPLE-1-1"]/strong'
                   }
@@ -296,8 +296,8 @@ SKULocations = {
           'SDBullion' : {
               'URL' : 'https://sdbullion.com/1-oz-silver-buffalo-round',
               'Quantity': {
-                  '1-9' : '//*[@id="maincontent"]/div[3]/div/div[3]/div[3]/table/tbody/tr[1]/td[2]/div/span/span/strong',
-                  '10-19' : '//*[@id="maincontent"]/div[3]/div/div[3]/div[3]/table/tbody/tr[1]/td[2]/div/span/span/strong',
+                  '1-9' : '//*[@id="maincontent"]/div[4]/div/div[1]/section[1]/div/div/div[3]/div[3]/div/table/tbody/tr[1]/td[2]/div/span/span/strong',
+                  '10-19' : '//*[@id="maincontent"]/div[4]/div/div[1]/section[1]/div/div/div[3]/div[3]/div/table/tbody/tr[1]/td[2]/div/span/span/strong',
                   '20-49' : '//*[@id="SGNBUFFALO-1-1"]/strong',
                   '50+' : '//*[@id="SGNBUFFALO-1-1"]/strong'
                   }
@@ -314,7 +314,7 @@ SKULocations = {
                   }
           },
           'APMEX' : {
-              'URL' : 'https://www.apmex.com/product/233637/10-oz-silver-bar-pamp-serialized',
+              'URL' : 'https://www.apmex.com/product/50644/10-oz-silver-bar-apmex-stackable',
               'Quantity': {
                   '1-9' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[1]/td[2]',
                   '10-19' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[2]/td[2]',
@@ -334,7 +334,7 @@ SKULocations = {
           'SDBullion' : {
               'URL' : 'https://sdbullion.com/generic-10-oz-silver-bullion-bars',
               'Quantity': {
-                  '1-9' : '//*[@id="maincontent"]/div[3]/div/div[3]/div[3]/table/tbody/tr[1]/td[2]/div/span/span/strong',
+                  '1-9' : '//*[@id="maincontent"]/div[4]/div/div[1]/section[1]/div/div/div[3]/div[3]/div/table/tbody/tr[1]/td[2]/div/span/span/strong',
                   '10-19' : '//*[@id="SGNBAR-10-1"]/strong',
                   '20-49' : '//*[@id="SGNBAR-10-2"]/strong',
                   '50+' : '//*[@id="SGNBAR-10-3"]/strong'
@@ -372,8 +372,8 @@ SKULocations = {
         'SDBullion': {
             'URL' : 'https://sdbullion.com/2024-1-2-oz-american-gold-eagle-coin',
             'Quantity' : {
-                '1-9' : '//*[@id="maincontent"]/div[3]/div/div[3]/div[3]/table/tbody/tr[1]/td[2]/div/span/span/strong',
-                '10-19' : '//*[@id="maincontent"]/div[3]/div/div[3]/div[3]/table/tbody/tr[1]/td[2]/div/span/span/strong',
+                '1-9' : '//*[@id="maincontent"]/div[4]/div/div[1]/section[1]/div/div/div[3]/div[3]/div/table/tbody/tr[1]/td[2]/div/span/span/strong',
+                '10-19' : '//*[@id="maincontent"]/div[4]/div/div[1]/section[1]/div/div/div[3]/div[3]/div/table/tbody/tr[1]/td[2]/div/span/span/strong',
                 '20-49' : '//*[@id="GUS24AGE-05-1"]/strong',
                 '50+' : '//*[@id="GUS24AGE-05-1"]/strong'
             }
@@ -410,8 +410,8 @@ SKULocations = {
         'SDBullion': {
             'URL' : 'https://sdbullion.com/1-2-oz-american-gold-eagle-coin-bu-random-year',
             'Quantity' : {
-                '1-9' : '//*[@id="maincontent"]/div[3]/div/div[3]/div[3]/table/tbody/tr[1]/td[2]/div/span/span/strong',
-                '10-19' : '//*[@id="maincontent"]/div[3]/div/div[3]/div[3]/table/tbody/tr[1]/td[2]/div/span/span/strong',
+                '1-9' : '//*[@id="maincontent"]/div[4]/div/div[1]/section[1]/div/div/div[3]/div[3]/div/table/tbody/tr[1]/td[2]/div/span/span/strong',
+                '10-19' : '//*[@id="maincontent"]/div[4]/div/div[1]/section[1]/div/div/div[3]/div[3]/div/table/tbody/tr[1]/td[2]/div/span/span/strong',
                 '20-49' : '//*[@id="GUSAGE-05-1"]/strong',
                 '50+' : '//*[@id="GUSAGE-05-2"]/strong'
             }
