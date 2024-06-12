@@ -495,7 +495,7 @@ SKULocations = {
     },
     'TthOzAuEagCur' : {
         'StJP': {
-            'URL' : 'https://www.stjosephpartners.com/item/110-oz-american-gold-eagle/.1EAGLE',
+            'URL' : 'https://www.stjosephpartners.com/item/2024-110-oz-american-gold-eagle/.1GE24',
             'Quantity' : {
                 '1-9' : '/html/body/div[1]/main/div/div[1]/div[2]/div[2]/div[2]/div/div/table/tbody/tr[2]/td[2]',
                 '10-19' : '/html/body/div[1]/main/div/div[1]/div[2]/div[2]/div[2]/div/div/table/tbody/tr[3]/td[2]',
