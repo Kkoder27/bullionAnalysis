@@ -412,8 +412,8 @@ SKULocations = {
             'Quantity' : {
                 '1-9' : '//*[@id="maincontent"]/div[4]/div/div[1]/section[1]/div/div/div[3]/div[3]/div/table/tbody/tr[1]/td[2]/div/span/span/strong',
                 '10-19' : '//*[@id="maincontent"]/div[4]/div/div[1]/section[1]/div/div/div[3]/div[3]/div/table/tbody/tr[1]/td[2]/div/span/span/strong',
-                '20-49' : '//*[@id="GUSAGE-05-1"]/strong',
-                '50+' : '//*[@id="GUSAGE-05-2"]/strong'
+                '20-49' : '//*[@id="maincontent"]/div[4]/div/div[1]/section[1]/div/div/div[3]/div[3]/div/table/tbody/tr[1]/td[2]/div/span/span/strong',
+                '50+' : '//*[@id="maincontent"]/div[4]/div/div[1]/section[1]/div/div/div[3]/div[3]/div/table/tbody/tr[1]/td[2]/div/span/span/strong'
             }
         }
     },

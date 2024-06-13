@@ -5,6 +5,7 @@ from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 import time, re
 import pandas as pd
+import threading
 
 from SKUref import SKULocations
 from SKUcost import SKUcost
@@ -21,10 +22,10 @@ def seleniumAction(item, company):
         try: driver.get(searchURL)
         except Exception as e:
             print(e)
-            time.sleep(5)
+            time.sleep(3)
             continue
         break
-    time.sleep(5)
+    time.sleep(3)
     count = 0
     for value in locList.values():
         cost = 'Out of Stock'
@@ -37,11 +38,34 @@ def seleniumAction(item, company):
     driver.close()
 
 def scrape():
+    #Construct Threading parameters
+    threadMax = len(SKULocations['OzAuEagRan'])
+    threadArray = []
+    threadCount = 0
+    startThreads = 0
+    while len(threadArray) < threadMax:
+        threadArray.append('thread_' + str(threadCount))
+        threadCount += 1
+    #Scrape Main
     for item in SKULocations:
             for company in SKULocations[item]:
+
                 if company == 'JMBullion':
                     continue
-                else:
-                #if company == 'StJP':
-                    seleniumAction(item, company)
-                    return
+                #startup for threads
+                if startThreads < threadMax:
+                        threadArray[startThreads] = threading.Thread(target=seleniumAction, args=(item, company))
+                        threadArray[startThreads].start()
+                        startThreads += 1
+                #threading main
+                threadFound = False
+                while not threadFound and not startThreads < threadMax:
+                    for indexValue in range(len(threadArray)):
+                        if threadFound: break
+                        if not threadArray[indexValue].is_alive():
+                            threadArray[indexValue] = threading.Thread(target=seleniumAction, args=(item, company))
+                            threadArray[indexValue].start()
+                            threadFound = True
+                            break
+    for indexValue in range(len(threadArray)):
+         threadArray[indexValue].join()
