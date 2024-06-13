@@ -11,26 +11,30 @@ from SKUcost import SKUcost
 from pandasWork import costAssembly
 
 
-def seleniumAction(searchURL, loc1, loc2, loc3, loc4):
-    seleniumOutput = [] #ALPHA
+def seleniumAction(item, company):
+    searchParam = SKULocations[item][company]
+    seleniumOutput = SKUcost[item][company]['Cost']
     driver = webdriver.Chrome()
+    searchURL = searchParam['URL']
+    locList = searchParam['Quantity']
     while True:
         try: driver.get(searchURL)
         except Exception as e:
             print(e)
-            time.sleep(3)
+            time.sleep(5)
             continue
         break
-    time.sleep(3)
-    locList = [loc1, loc2, loc3, loc4]
-    for value in locList:
+    time.sleep(5)
+    count = 0
+    for value in locList.values():
         cost = 'Out of Stock'
         try: cost = driver.find_element(By.XPATH, value).text
-        except NoSuchElementException:
+        except NoSuchElementException as e:
+            print(e)
             pass
-        seleniumOutput.append(cost)
+        seleniumOutput[list(locList.keys())[count]] = cost
+        count += 1
     driver.close()
-    return seleniumOutput
 
 def scrape():
     for item in SKULocations:
@@ -39,13 +43,5 @@ def scrape():
                     continue
                 else:
                 #if company == 'StJP':
-                    searchURL = SKULocations[item][company]['URL']
-                    searchQuantity1 = SKULocations[item][company]['Quantity']['1-9']
-                    searchQuantity2 = SKULocations[item][company]['Quantity']['10-19']
-                    searchQuantity3 = SKULocations[item][company]['Quantity']['20-49']
-                    searchQuantity4 = SKULocations[item][company]['Quantity']['50+']
-                    seleniumOutput = seleniumAction(searchURL, searchQuantity1, searchQuantity2, searchQuantity3, searchQuantity4)
-                    SKUcost[item][company]['Cost']['1-9'] = seleniumOutput[0]
-                    SKUcost[item][company]['Cost']['10-19'] = seleniumOutput[1]
-                    SKUcost[item][company]['Cost']['20-49'] = seleniumOutput[2]
-                    SKUcost[item][company]['Cost']['50+'] = seleniumOutput[3]
+                    seleniumAction(item, company)
+                    return
