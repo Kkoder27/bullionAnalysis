@@ -12,8 +12,7 @@ from pandasWork import costAssembly
 
 
 def seleniumAction(searchURL, loc1, loc2, loc3, loc4):
-    global testParams 
-    testParams = [] #ALPHA
+    seleniumOutput = [] #ALPHA
     driver = webdriver.Chrome()
     while True:
         try: driver.get(searchURL)
@@ -25,12 +24,13 @@ def seleniumAction(searchURL, loc1, loc2, loc3, loc4):
     time.sleep(3)
     locList = [loc1, loc2, loc3, loc4]
     for value in locList:
-        cost = 'N/A'
+        cost = 'Out of Stock'
         try: cost = driver.find_element(By.XPATH, value).text
         except NoSuchElementException:
             pass
-        testParams.append(cost)
+        seleniumOutput.append(cost)
     driver.close()
+    return seleniumOutput
 
 def scrape():
     for item in SKULocations:
@@ -44,8 +44,8 @@ def scrape():
                     searchQuantity2 = SKULocations[item][company]['Quantity']['10-19']
                     searchQuantity3 = SKULocations[item][company]['Quantity']['20-49']
                     searchQuantity4 = SKULocations[item][company]['Quantity']['50+']
-                    seleniumAction(searchURL, searchQuantity1, searchQuantity2, searchQuantity3, searchQuantity4)
-                    SKUcost[item][company]['Cost']['1-9'] = testParams[0]
-                    SKUcost[item][company]['Cost']['10-19'] = testParams[1]
-                    SKUcost[item][company]['Cost']['20-49'] = testParams[2]
-                    SKUcost[item][company]['Cost']['50+'] = testParams[3]
+                    seleniumOutput = seleniumAction(searchURL, searchQuantity1, searchQuantity2, searchQuantity3, searchQuantity4)
+                    SKUcost[item][company]['Cost']['1-9'] = seleniumOutput[0]
+                    SKUcost[item][company]['Cost']['10-19'] = seleniumOutput[1]
+                    SKUcost[item][company]['Cost']['20-49'] = seleniumOutput[2]
+                    SKUcost[item][company]['Cost']['50+'] = seleniumOutput[3]
