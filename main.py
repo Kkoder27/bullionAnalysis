@@ -5,47 +5,67 @@ from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 import time, re
 import pandas as pd
+import threading
 
 from SKUref import SKULocations
 from SKUcost import SKUcost
-from pandasWork import costAssembly, workbookConfig
+from pandasWork import costAssembly
 
 
-def seleniumAction(searchURL, loc1, loc2, loc3, loc4):
-    global testParams 
-    testParams = [] #ALPHA
+def seleniumAction(item, company):
+    searchParam = SKULocations[item][company]
+    seleniumOutput = SKUcost[item][company]['Cost']
     driver = webdriver.Chrome()
+    searchURL = searchParam['URL']
+    locList = searchParam['Quantity']
     while True:
         try: driver.get(searchURL)
         except Exception as e:
             print(e)
-            time.sleep(1)
+            time.sleep(3)
             continue
         break
-    time.sleep(1)
-    locList = [loc1, loc2, loc3, loc4]
-    for value in locList:
-        cost = 'N/A'
+    time.sleep(3)
+    count = 0
+    for value in locList.values():
+        cost = 'Out of Stock'
         try: cost = driver.find_element(By.XPATH, value).text
-        except NoSuchElementException:
+        except NoSuchElementException as e:
+            print(e)
             pass
-        testParams.append(cost)
+        seleniumOutput[list(locList.keys())[count]] = cost
+        count += 1
     driver.close()
 
 def scrape():
+    #Construct Threading parameters
+    threadMax = len(SKULocations['OzAuEagRan'])
+    threadArray = []
+    threadCount = 0
+    startThreads = 0
+    while len(threadArray) < threadMax:
+        threadArray.append('thread_' + str(threadCount))
+        threadCount += 1
+    #Scrape Main
     for item in SKULocations:
             for company in SKULocations[item]:
+
                 if company == 'JMBullion':
                     continue
-                else:
-                #if company == 'StJP':
-                    searchURL = SKULocations[item][company]['URL']
-                    searchQuantity1 = SKULocations[item][company]['Quantity']['1-9']
-                    searchQuantity2 = SKULocations[item][company]['Quantity']['10-19']
-                    searchQuantity3 = SKULocations[item][company]['Quantity']['20-49']
-                    searchQuantity4 = SKULocations[item][company]['Quantity']['50+']
-                    seleniumAction(searchURL, searchQuantity1, searchQuantity2, searchQuantity3, searchQuantity4)
-                    SKUcost[item][company]['Cost']['1-9'] = testParams[0]
-                    SKUcost[item][company]['Cost']['10-19'] = testParams[1]
-                    SKUcost[item][company]['Cost']['20-49'] = testParams[2]
-                    SKUcost[item][company]['Cost']['50+'] = testParams[3]
+                #startup for threads
+                if startThreads < threadMax:
+                        threadArray[startThreads] = threading.Thread(target=seleniumAction, args=(item, company))
+                        threadArray[startThreads].start()
+                        startThreads += 1
+                #threading main
+                threadFound = False
+                while not threadFound and not startThreads < threadMax:
+                    for indexValue in range(len(threadArray)):
+                        if threadFound: break
+                        if not threadArray[indexValue].is_alive():
+                            threadArray[indexValue] = threading.Thread(target=seleniumAction, args=(item, company))
+                            threadArray[indexValue].start()
+                            threadFound = True
+                            break
+    for indexValue in range(len(threadArray)):
+         threadArray[indexValue].join()
