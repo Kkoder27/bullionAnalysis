@@ -39,7 +39,7 @@ def seleniumAction(item, company):
 
 def scrape():
     #Construct Threading parameters
-    threadMax = len(SKULocations['OzAuEagRan'])
+    threadMax = len(SKULocations['OzAuEagRan']) * 2
     threadArray = []
     threadCount = 0
     startThreads = 0
