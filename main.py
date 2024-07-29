@@ -69,3 +69,7 @@ def scrape():
                             break
     for indexValue in range(len(threadArray)):
          threadArray[indexValue].join()
+
+def initialize():
+        scrape()
+        costAssembly()
