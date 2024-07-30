@@ -10,6 +10,7 @@ import threading
 from SKUref import SKULocations
 from SKUcost import SKUcost
 from pandasWork import costAssembly
+from mail import mailMain, mailList
 
 
 def seleniumAction(item, company):
@@ -72,4 +73,4 @@ def scrape():
 
 def initialize():
         scrape()
-        costAssembly()
+        sendFile = costAssembly()

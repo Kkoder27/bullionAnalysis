@@ -31,9 +31,9 @@ SKULocations = {
               'URL' : 'https://sdbullion.com/1-oz-american-gold-eagle-coin-random-year-bu',
               'Quantity': { 
                   '1-9' : '//*[@id="maincontent"]/div[4]/div/div[1]/section[1]/div/div/div[3]/div[3]/div/table/tbody/tr[1]/td[2]/div/span/span/strong',
-                  '10-19' : '//*[@id="GUSAGE-1-1"]',
-                  '20-49' : '//*[@id="GUSAGE-1-2"]',
-                  '50+' : '//*[@id="GUSAGE-1-2"]'
+                  '10-19' : '//*[@id="maincontent"]/div[4]/div/div[1]/section[1]/div/div/div[3]/div[3]/div/table/tbody/tr[1]/td[2]/div/span/span/strong',
+                  '20-49' : '//*[@id="maincontent"]/div[4]/div/div[1]/section[1]/div/div/div[3]/div[3]/div/table/tbody/tr[1]/td[2]/div/span/span/strong',
+                  '50+' : '//*[@id="maincontent"]/div[4]/div/div[1]/section[1]/div/div/div[3]/div[3]/div/table/tbody/tr[1]/td[2]/div/span/span/strong'
                   }
             }
         },
@@ -145,9 +145,9 @@ SKULocations = {
               'URL' : 'https://sdbullion.com/1-oz-austrian-philharmonic-gold-coin-random-year',
               'Quantity': { #not in stock, using alternative year
                   '1-9' : '//*[@id="maincontent"]/div[4]/div/div[1]/section[1]/div/div/div[3]/div[3]/div/table/tbody/tr[1]/td[2]/div/span/span/strong',
-                  '10-19' : '//*[@id="GAUPHIL-1-2"]/strong',
-                  '20-49' : '//*[@id="GAUPHIL-1-2"]/strong',
-                  '50+' : '//*[@id="GAUPHIL-1-2"]/strong'
+                  '10-19' : '//*[@id="maincontent"]/div[4]/div/div[1]/section[1]/div/div/div[3]/div[3]/div/table/tbody/tr[1]/td[2]/div/span/span/strong',
+                  '20-49' : '//*[@id="maincontent"]/div[4]/div/div[1]/section[1]/div/div/div[3]/div[3]/div/table/tbody/tr[1]/td[2]/div/span/span/strong',
+                  '50+' : '//*[@id="maincontent"]/div[4]/div/div[1]/section[1]/div/div/div[3]/div[3]/div/table/tbody/tr[1]/td[2]/div/span/span/strong'
                   }
             }
         },
@@ -335,9 +335,9 @@ SKULocations = {
               'URL' : 'https://sdbullion.com/generic-10-oz-silver-bullion-bars',
               'Quantity': {
                   '1-9' : '//*[@id="maincontent"]/div[4]/div/div[1]/section[1]/div/div/div[3]/div[3]/div/table/tbody/tr[1]/td[2]/div/span/span/strong',
-                  '10-19' : '//*[@id="SGNBAR-10-1"]/strong',
-                  '20-49' : '//*[@id="SGNBAR-10-2"]/strong',
-                  '50+' : '//*[@id="SGNBAR-10-3"]/strong'
+                  '10-19' : '//*[@id="maincontent"]/div[4]/div/div[1]/section[1]/div/div/div[3]/div[3]/div/table/tbody/tr[1]/td[2]/div/span/span/strong',
+                  '20-49' : '//*[@id="maincontent"]/div[4]/div/div[1]/section[1]/div/div/div[3]/div[3]/div/table/tbody/tr[1]/td[2]/div/span/span/strong',
+                  '50+' : '//*[@id="maincontent"]/div[4]/div/div[1]/section[1]/div/div/div[3]/div[3]/div/table/tbody/tr[1]/td[2]/div/span/span/strong'
                   }
             }
         },
