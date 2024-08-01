@@ -1,5 +1,5 @@
 __pycache__
 *.xlsx
 .venv
-credentials.json
+credentials-sheets.json
 token.json

@@ -3,10 +3,8 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
-import time, re
+import time, datetime, threading
 import pandas as pd
-import threading
-
 from SKUref import SKULocations
 from SKUcost import SKUcost
 from pandasWork import costAssembly
@@ -40,7 +38,7 @@ def seleniumAction(item, company):
 
 def scrape():
     #Construct Threading parameters
-    threadMax = len(SKULocations['OzAuEagRan']) * 2
+    threadMax = len(SKULocations['OzAuEagRan'])
     threadArray = []
     threadCount = 0
     startThreads = 0
@@ -72,5 +70,12 @@ def scrape():
          threadArray[indexValue].join()
 
 def initialize():
-        scrape()
-        sendFile = costAssembly()
+    while True:
+        now = datetime.datetime.now()
+        if int(now.strftime('%H')) == 3:
+            scrape()
+            sendFile = costAssembly()
+            for address in mailList:
+                mailMain(address, sendFile)
+            time.sleep(3600)
+        else: time.sleep(900)
