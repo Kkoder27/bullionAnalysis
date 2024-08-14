@@ -11,6 +11,7 @@ from pandasWork import costAssembly
 from mail import mailMain, mailList
 
 
+
 def seleniumAction(item, company):
     searchParam = SKULocations[item][company]
     seleniumOutput = SKUcost[item][company]['Cost']
@@ -38,7 +39,7 @@ def seleniumAction(item, company):
 
 def scrape():
     #Construct Threading parameters
-    threadMax = len(SKULocations['OzAuEagRan'])
+    threadMax = 2 #len(SKULocations['OzAuEagRan'])
     threadArray = []
     threadCount = 0
     startThreads = 0
@@ -69,13 +70,21 @@ def scrape():
     for indexValue in range(len(threadArray)):
          threadArray[indexValue].join()
 
+def mailChunk():
+    scrape()
+    sendFile = costAssembly()
+    for address in mailList:
+        mailMain(address, sendFile)
+
+def authenticate():
+    pass
+
 def initialize():
     while True:
         now = datetime.datetime.now()
         if int(now.strftime('%H')) == 3:
-            scrape()
-            sendFile = costAssembly()
-            for address in mailList:
-                mailMain(address, sendFile)
+            mailChunk()
             time.sleep(3600)
-        else: time.sleep(900)
+        else:
+            print('It is not time for scraping. it is ' + now.strftime('%H'))
+            time.sleep(900)
