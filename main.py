@@ -82,9 +82,9 @@ def authenticate():
 def initialize():
     while True:
         now = datetime.datetime.now()
-        if int(now.strftime('%H')) == 3:
+        if int(now.strftime('%H')) == 10 and int(now.strftime('%M')) > 30:
             mailChunk()
             time.sleep(3600)
         else:
-            print('It is not time for scraping. it is ' + now.strftime('%H'))
+            print('It is not time for scraping. it is ' + now.strftime('%H%M'))
             time.sleep(900)

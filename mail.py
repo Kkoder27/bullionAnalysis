@@ -1,7 +1,10 @@
-import ezgmail, datetime
+import ezgmail, datetime, os
+
 sendfrom = 'bullioncostanalyzer@gmail.com'
 mailList = [
-    'brunswickKM7@gmail.com'
+    'brunswickKM7@gmail.com',
+    'drew.mason@stjosephpartners.com',
+    'mcrutcher@x42ventures.com'
 ]
 
 def mailMain(address, file): #serves to mail out the bullionanalysis to mailing list
@@ -13,4 +16,8 @@ def mailMain(address, file): #serves to mail out the bullionanalysis to mailing 
     ezgmail.send(address, subject, body, file, sender=sendfrom)
 
 def mailCheck(): #checks mail for commands sent
+    pass
+
+def authenticate():
+    #os.remove('token.json')
     pass 

@@ -1,4 +1,4 @@
-import time
+import time, datetime, ezgmail
 from SKUcost import SKUcost
 from main import *
 
@@ -37,6 +37,14 @@ from main import *
 #                 print(SKUcost[item][company])
 def chunkTest(number): #test mailchunk n times
     for value in range(number):
-        print('TEST' + str(value))
+        now = datetime.datetime.now()
+        print('TEST ' + str(value))
+        print('Tested at ' + now.strftime('%H'))
         mailChunk()
-        time.sleep(60)
+        time.sleep(3600)
+
+def singleMailTest(number):
+    for value in range(number):
+        testNo = 'test ' + str(value)
+        ezgmail.send('brunswickkm7@gmail.com', testNo, 'this is test number ' + str(value))
+        time.sleep(900)
