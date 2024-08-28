@@ -22,3 +22,4 @@ def costAssembly():
         with pd.ExcelWriter(fileName, mode=writefile, engine='openpyxl') as writer:
             activeDF.to_excel(writer, sheet_name=sheetName, index=False)
             writefile = 'a'
+    return fileName
