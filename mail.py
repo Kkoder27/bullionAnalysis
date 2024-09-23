@@ -4,7 +4,8 @@ sendfrom = 'bullioncostanalyzer@gmail.com'
 mailList = [
     'brunswickKM7@gmail.com',
     'drew.mason@stjosephpartners.com',
-    'mcrutcher@x42ventures.com'
+    'mcrutcher@x42ventures.com',
+    'Orders@stjosephpartners.com'
 ]
 
 def mailMain(address, file): #serves to mail out the bullionanalysis to mailing list
