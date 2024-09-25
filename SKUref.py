@@ -12,10 +12,10 @@ SKULocations = {
           'APMEX' : {
               'URL' : 'https://www.apmex.com/product/1/1-oz-american-gold-eagle-coin-bu-random-year',
               'Quantity': {
-                  '1-9' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[1]/td[2]',
-                  '10-19' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[2]/td[2]',
-                  '20-49' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[3]/td[2]',
-                  '50+' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[3]/td[2]'
+                  '1-9' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[1]/td[2]',
+                  '10-19' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[2]/td[2]',
+                  '20-49' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[3]/td[2]',
+                  '50+' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[3]/td[2]'
                   }
           },
           'JMBullion': {
@@ -50,10 +50,10 @@ SKULocations = {
           'APMEX' : {
               'URL' : 'https://www.apmex.com/product/284453/2024-1-oz-american-gold-eagle-bu',
               'Quantity': {
-                  '1-9' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[1]/td[2]',
-                  '10-19' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[2]/td[2]',
-                  '20-49' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[3]/td[2]',
-                  '50+' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[3]/td[2]'
+                  '1-9' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[1]/td[2]',
+                  '10-19' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[2]/td[2]',
+                  '20-49' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[3]/td[2]',
+                  '50+' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[3]/td[2]'
                   }
           },
           'JMBullion': {
@@ -88,10 +88,10 @@ SKULocations = {
           'APMEX' : {
               'URL' : 'https://www.apmex.com/product/284335/2024-canada-1-oz-gold-maple-leaf-bu',
               'Quantity': {
-                  '1-9' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[1]/td[2]',
-                  '10-19' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[2]/td[2]',
-                  '20-49' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[3]/td[2]',
-                  '50+' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[3]/td[2]'
+                  '1-9' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[1]/td[2]',
+                  '10-19' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[2]/td[2]',
+                  '20-49' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[3]/td[2]',
+                  '50+' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[3]/td[2]'
                   }
           },
           'JMBullion': {
@@ -126,10 +126,10 @@ SKULocations = {
           'APMEX' : {
               'URL' : 'https://www.apmex.com/product/284607/2024-austria-1-oz-gold-philharmonic-coin-bu',
               'Quantity': {
-                  '1-9' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[1]/td[2]',
-                  '10-19' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[2]/td[2]',
-                  '20-49' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[3]/td[2]',
-                  '50+' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[3]/td[2]'
+                  '1-9' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[1]/td[2]',
+                  '10-19' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[2]/td[2]',
+                  '20-49' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[3]/td[2]',
+                  '50+' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[3]/td[2]'
                   }
           },
           'JMBullion': {
@@ -142,8 +142,8 @@ SKULocations = {
                   }
           },
           'SDBullion' : {
-              'URL' : 'https://sdbullion.com/1-oz-austrian-philharmonic-gold-coin-random-year',
-              'Quantity': { #not in stock, using alternative year
+              'URL' : 'https://sdbullion.com/2024-1-oz-austrian-gold-philharmonic-coin',
+              'Quantity': {
                   '1-9' : '//*[@id="maincontent"]/div[4]/div/div[1]/section[1]/div/div/div[3]/div[3]/div/table/tbody/tr[1]/td[2]/div/span/span/strong',
                   '10-19' : '//*[@id="maincontent"]/div[4]/div/div[1]/section[1]/div/div/div[3]/div[3]/div/table/tbody/tr[1]/td[2]/div/span/span/strong',
                   '20-49' : '//*[@id="maincontent"]/div[4]/div/div[1]/section[1]/div/div/div[3]/div[3]/div/table/tbody/tr[1]/td[2]/div/span/span/strong',
@@ -164,10 +164,10 @@ SKULocations = {
           'APMEX' : {
               'URL' : 'https://www.apmex.com/product/272064/1-oz-gold-bar-pamp-in-assay',
               'Quantity': {
-                  '1-9' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[1]/td[2]',
-                  '10-19' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[2]/td[2]',
-                  '20-49' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[3]/td[2]',
-                  '50+' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[3]/td[2]'
+                  '1-9' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[1]/td[2]',
+                  '10-19' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[2]/td[2]',
+                  '20-49' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[3]/td[2]',
+                  '50+' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[3]/td[2]'
                   }
           },
           'JMBullion': {
@@ -202,10 +202,10 @@ SKULocations = {
           'APMEX' : {
               'URL' : 'https://www.apmex.com/product/284458/2024-1-oz-american-silver-eagle-coin-bu',
               'Quantity': {
-                  '1-9' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[1]/td[2]',
-                  '10-19' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[2]/td[2]',
-                  '20-49' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[3]/td[2]',
-                  '50+' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[3]/td[2]'
+                  '1-9' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[1]/td[2]',
+                  '10-19' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[2]/td[2]',
+                  '20-49' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[3]/td[2]',
+                  '50+' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[3]/td[2]'
                   }
           },
           'JMBullion': {
@@ -240,10 +240,10 @@ SKULocations = {
           'APMEX' : {
               'URL' : 'https://www.apmex.com/product/284792/2024-canada-1-oz-silver-maple-leaf-bu',
               'Quantity': {
-                  '1-9' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[1]/td[2]',
-                  '10-19' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[2]/td[2]',
-                  '20-49' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[3]/td[2]',
-                  '50+' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[3]/td[2]'
+                  '1-9' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[1]/td[2]',
+                  '10-19' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[2]/td[2]',
+                  '20-49' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[3]/td[2]',
+                  '50+' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[3]/td[2]'
                   }
           },
           'JMBullion': {
@@ -278,10 +278,10 @@ SKULocations = {
           'APMEX' : {
               'URL' : 'https://www.apmex.com/product/44447/1-oz-silver-round-buffalo',
               'Quantity': {
-                  '1-9' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[1]/td[2]',
-                  '10-19' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[2]/td[2]',
-                  '20-49' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[3]/td[2]',
-                  '50+' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[3]/td[2]'
+                  '1-9' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[1]/td[2]',
+                  '10-19' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[2]/td[2]',
+                  '20-49' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[3]/td[2]',
+                  '50+' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[3]/td[2]'
                   }
           },
           'JMBullion': {
@@ -316,10 +316,10 @@ SKULocations = {
           'APMEX' : {
               'URL' : 'https://www.apmex.com/product/50644/10-oz-silver-bar-apmex-stackable',
               'Quantity': {
-                  '1-9' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[1]/td[2]',
-                  '10-19' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[2]/td[2]',
-                  '20-49' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[3]/td[2]',
-                  '50+' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[3]/td[2]'
+                  '1-9' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[1]/td[2]',
+                  '10-19' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[2]/td[2]',
+                  '20-49' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[3]/td[2]',
+                  '50+' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[3]/td[2]'
                   }
           },
           'JMBullion': {
@@ -354,10 +354,10 @@ SKULocations = {
         'APMEX': {
             'URL' : 'https://www.apmex.com/product/284452/2024-1-2-oz-american-gold-eagle-coin-bu',
             'Quantity' : {
-                '1-9' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[1]/td[2]',
-                '10-19' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[1]/td[2]',
-                '20-49' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[2]/td[2]',
-                '50+' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[2]/td[2]'
+                '1-9' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[1]/td[2]',
+                '10-19' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[1]/td[2]',
+                '20-49' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[2]/td[2]',
+                '50+' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[2]/td[2]'
             }
         },
         'JMBullion': {
@@ -392,10 +392,10 @@ SKULocations = {
         'APMEX': {
             'URL' : 'https://www.apmex.com/product/2/1-2-oz-american-gold-eagle-coin-bu-random-year',
             'Quantity' : {
-                '1-9' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[1]/td[2]',
-                '10-19' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[1]/td[2]',
-                '20-49' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[2]/td[2]',
-                '50+' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[3]/td[2]'
+                '1-9' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[1]/td[2]',
+                '10-19' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[1]/td[2]',
+                '20-49' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[2]/td[2]',
+                '50+' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[3]/td[2]'
             }
         },
         'JMBullion': {
@@ -430,10 +430,10 @@ SKULocations = {
         'APMEX': {
             'URL' : 'https://www.apmex.com/product/284451/2024-1-4-oz-american-gold-eagle-coin-bu',
             'Quantity' : {
-                '1-9' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[1]/td[2]',
-                '10-19' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[1]/td[2]',
-                '20-49' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[2]/td[2]',
-                '50+' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[3]/td[2]'
+                '1-9' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[1]/td[2]',
+                '10-19' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[1]/td[2]',
+                '20-49' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[2]/td[2]',
+                '50+' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[3]/td[2]'
             }
         },
         'JMBullion': {
@@ -468,10 +468,10 @@ SKULocations = {
         'APMEX': {
             'URL' : 'https://www.apmex.com/product/3/1-4-oz-american-gold-eagle-coin-bu-random-year',
             'Quantity' : {
-                '1-9' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[1]/td[2]',
-                '10-19' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[1]/td[2]',
-                '20-49' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[2]/td[2]',
-                '50+' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[3]/td[2]'
+                '1-9' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[1]/td[2]',
+                '10-19' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[1]/td[2]',
+                '20-49' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[2]/td[2]',
+                '50+' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[3]/td[2]'
             }
         },
         'JMBullion': {
@@ -506,10 +506,10 @@ SKULocations = {
         'APMEX': {
             'URL' : 'https://www.apmex.com/product/284449/2024-1-10-oz-american-gold-eagle-coin-bu',
             'Quantity' : {
-                '1-9' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[1]/td[2]',
-                '10-19' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[1]/td[2]',
-                '20-49' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[1]/td[2]',
-                '50+' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[2]/td[2]'
+                '1-9' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[1]/td[2]',
+                '10-19' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[1]/td[2]',
+                '20-49' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[1]/td[2]',
+                '50+' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[2]/td[2]'
             }
         },
         'JMBullion': {
@@ -544,10 +544,10 @@ SKULocations = {
         'APMEX': {
             'URL' : 'https://www.apmex.com/product/4/1-10-oz-american-gold-eagle-coin-bu-random-year',
             'Quantity' : {
-                '1-9' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[1]/td[2]',
-                '10-19' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[1]/td[2]',
-                '20-49' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[1]/td[2]',
-                '50+' : '/html/body/main/div/div[1]/section/div[2]/div[4]/table/tbody/tr[2]/td[2]'
+                '1-9' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[1]/td[2]',
+                '10-19' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[1]/td[2]',
+                '20-49' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[1]/td[2]',
+                '50+' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[2]/td[2]'
             }
         },
         'JMBullion': {

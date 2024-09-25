@@ -10,7 +10,8 @@ from SKUcost import SKUcost
 from pandasWork import costAssembly
 from mail import mailMain, mailList
 
-
+def startup():
+    pass #make SKUcost dynamically
 
 def seleniumAction(item, company):
     searchParam = SKULocations[item][company]
@@ -36,6 +37,12 @@ def seleniumAction(item, company):
         seleniumOutput[list(locList.keys())[count]] = cost
         count += 1
     driver.close()
+
+def mailChunk():
+    scrape()
+    sendFile = costAssembly()
+    for address in mailList:
+        mailMain(address, sendFile)
 
 def scrape():
     #Construct Threading parameters
@@ -69,15 +76,6 @@ def scrape():
                             break
     for indexValue in range(len(threadArray)):
          threadArray[indexValue].join()
-
-def mailChunk():
-    scrape()
-    sendFile = costAssembly()
-    for address in mailList:
-        mailMain(address, sendFile)
-
-def authenticate():
-    pass
 
 def initialize():
     while True:
