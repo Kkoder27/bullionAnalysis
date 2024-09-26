@@ -13,5 +13,6 @@ SKUkey = {
     'QtOzAuEagCur': '.25GE24', 
     'QtOzAuEagRan': '.25EAGLE', 
     'TthOzAuEagCur': '.1GE24', 
-    'TthOzAuEagRan': '.1EAGLE'
+    'TthOzAuEagRan': '.1EAGLE',
+    'MiscAgRound': 'MiscAgRound'
 }

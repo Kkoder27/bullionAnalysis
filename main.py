@@ -6,12 +6,18 @@ from selenium.common.exceptions import NoSuchElementException
 import time, datetime, threading
 import pandas as pd
 from SKUref import SKULocations
-from SKUcost import SKUcost
 from pandasWork import costAssembly
 from mail import mailMain, mailList
 
+SKUcost = {}
+
 def startup():
-    pass #make SKUcost dynamically
+    costStructure = {'Cost': {'1-9' : 0,'10-19' : 0,'20-49' : 0,'50+' : 0}}
+    for item in SKULocations:
+        SKUcost.setdefault(item, {})
+        for company in SKULocations[item]:
+            SKUcost[item].setdefault(company, costStructure)
+    return(SKUcost)
 
 def seleniumAction(item, company):
     searchParam = SKULocations[item][company]
@@ -40,7 +46,7 @@ def seleniumAction(item, company):
 
 def mailChunk():
     scrape()
-    sendFile = costAssembly()
+    sendFile = costAssembly(SKUcost)
     for address in mailList:
         mailMain(address, sendFile)
 
@@ -86,3 +92,5 @@ def initialize():
         else:
             print('It is not time for scraping. it is ' + now.strftime('%H%M'))
             time.sleep(900)
+
+startup()

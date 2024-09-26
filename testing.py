@@ -4,10 +4,16 @@ from main import *
 
 def costTestResult (testgroup):
     for item in SKUcost:
-        for company in SKUcost[item]:
-            if company == testgroup:
-                print(item)
+        if item == testgroup:
+            print(item)
+            for company in SKUcost[item]:
+                print(company)
                 print(SKUcost[item][company])
+        else: 
+            for company in SKUcost[item]:
+                if company == testgroup:
+                    print(item)
+                    print(SKUcost[item][company])
 
 def chunkTest(number): #test mailchunk n times
     for value in range(number):
