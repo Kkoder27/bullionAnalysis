@@ -568,5 +568,52 @@ SKULocations = {
                 '50+' : '//*[@id="GUSAGE-010-1"]/strong'
             }
         }
-    }
+    },
+    'MiscAgRound' : {
+        'SDBchoice': {
+            'URL' : 'https://sdbullion.com/1-oz-generic-silver-rounds',
+            'Quantity' : { 
+                '1-9' : '//*[@id="maincontent"]/div[4]/div/div[1]/section[1]/div/div/div[3]/div[3]/div/table/tbody/tr[1]/td[2]/div/span/span/strong',
+                '10-19' : '//*[@id="maincontent"]/div[4]/div/div[1]/section[1]/div/div/div[3]/div[3]/div/table/tbody/tr[1]/td[2]/div/span/span/strong',
+                '20-49' : '//*[@id="SGNROUNDSC-1-1"]/strong',
+                '50+' : '//*[@id="SGNROUNDSC-1-1"]/strong'
+            }
+        },
+        'SDBnewChoice': {
+            'URL' : 'https://sdbullion.com/1-oz-silver-rounds-new',
+            'Quantity' : {
+                '1-9' : '//*[@id="maincontent"]/div[4]/div/div[1]/section[1]/div/div/div[3]/div[3]/div/table/tbody/tr[1]/td[2]/div/span/span/strong',
+                '10-19' : '//*[@id="maincontent"]/div[4]/div/div[1]/section[1]/div/div/div[3]/div[3]/div/table/tbody/tr[1]/td[2]/div/span/span/strong',
+                '20-49' : '//*[@id="SGNROUND-1-1"]/strong',
+                '50+' : '//*[@id="SGNROUND-1-1"]/strong'
+            }
+        },
+        'SDBTrumpRound': {
+            'URL' : 'https://sdbullion.com/2024-1-oz-president-donald-trump-silver-presidential-medal',
+            'Quantity' : {
+                '1-9' : '//*[@id="maincontent"]/div[4]/div/div[1]/section[1]/div/div/div[3]/div[3]/div/table/tbody/tr[1]/td[2]/div/span/span/strong',
+                '10-19' : '//*[@id="maincontent"]/div[4]/div/div[1]/section[1]/div/div/div[3]/div[3]/div/table/tbody/tr[1]/td[2]/div/span/span/strong',
+                '20-49' : '//*[@id="SSC24TRUMP-1-1"]/strong',
+                '50+' : '//*[@id="SSC24TRUMP-1-1"]/strong'
+            }
+        },
+        'APSecondaryMkt': {
+            'URL' : 'https://www.apmex.com/product/23/1-oz-silver-round-secondary-market',
+            'Quantity' : {
+                '1-9' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[1]/td[2]',
+                '10-19' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[1]/td[2]',
+                '20-49' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[1]/td[2]',
+                '50+' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[2]/td[2]'
+            }
+        },
+        'APMEXOfficial': {
+            'URL' : 'https://www.apmex.com/product/27024/1-oz-silver-round-apmex',
+            'Quantity' : {
+                '1-9' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[1]/td[2]',
+                '10-19' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[1]/td[2]',
+                '20-49' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[1]/td[2]',
+                '50+' : '/html/body/main/div/div[1]/section/div[2]/div[5]/table/tbody/tr[2]/td[2]'
+            }
+        }
+        }
 }
